@@ -1,0 +1,49 @@
+body{
+    background-image: url("./imagen/background.jpeg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border-radius: 2em;
+}
+
+button {
+    width: 24%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button:active{
+    background-color: rgba(0, 3, 48, 0.8);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.column {
+    text-align: center;
+    min-width: 20em;
+}
+
+.display{
+    min-width: 20em;
+    background-color: rgba(21, 48, 71, 0.233);
+    color: white;
+}
