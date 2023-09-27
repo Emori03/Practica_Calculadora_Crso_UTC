@@ -1,1 +1,0 @@
-Prueba de segundo archivo para commits en Git
