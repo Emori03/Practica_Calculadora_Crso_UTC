@@ -48,6 +48,16 @@ button:active {
     color: white;
 }
 
+.calculadora{
+    padding: 1em;
+    border-radius: 2em;
+    border: 2px solid transparent;
+    animation: changeBorderColor 5s linear infinite;
+    background-image: url("./imagen/Calculadora.jpg");
+    background-size: cover;
+    min-height: 25em;
+}
+
 .name {
     position: absolute;
     color: white;
@@ -66,3 +76,21 @@ button:active {
         opacity: 1;
     }
 }
+
+@keyframes changeBorderColor {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: blue;
+    }
+    50% {
+      border-color: green;
+    }
+    75% {
+      border-color: yellow;
+    }
+    100% {
+      border-color: red; /* Back to the initial color */
+    }
+  }
