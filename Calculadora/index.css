@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("./imagen/background.jpeg");
     background-size: cover;
     overflow: hidden;
@@ -20,11 +20,12 @@ button {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-button:active{
+button:active {
     background-color: rgba(0, 3, 48, 0.8);
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +35,6 @@ button:active{
 .row {
     display: grid;
     grid-gap: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .column {
@@ -42,8 +42,27 @@ button:active{
     min-width: 20em;
 }
 
-.display{
+.display {
     max-width: 60%;
     background-color: rgba(21, 48, 71, 0.233);
     color: white;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    opacity: 0;
+    font-size: 5em;
+    animation: fadeIn 2s ease-in-out forwards;
+    top: -1em;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
