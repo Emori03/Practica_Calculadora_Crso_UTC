@@ -12,7 +12,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <input class="display" type="text" id="display" readonly>
+            <div class="column">
+                <input class="display" type="text" id="display" readonly>
+                <button onclick="deleteDisplay()">«</button>
+            </div>
             <div class="column">
                 <button onclick="appendToDisplay('7')">7</button>
                 <button onclick="appendToDisplay('8')">8</button>
