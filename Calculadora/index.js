@@ -8,9 +8,7 @@ function clearDisplay() {
 
 function deleteDisplay() {
     let Display = document.getElementById("display").value;
-    console.log(Display);
     document.getElementById("display").value = Display.substring(0, Display.length - 1);
-    console.log(Display);
 }
 
 function calculateResult() {
