@@ -30,7 +30,9 @@ document.addEventListener('keydown', function(event) {
     } else if (event.key === 'Backspace'){
         button = document.getElementById('btnC');
     }
-    if (event.key === '1') {
+    if (event.key === '0') {
+        button = document.getElementById('btn0');
+    } else if (event.key === '1'){
         button = document.getElementById('btn1');
     } else if (event.key === '2'){
         button = document.getElementById('btn2');
